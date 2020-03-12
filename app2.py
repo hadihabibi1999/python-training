@@ -1,9 +1,8 @@
-count = 0
+command = ''
 was_started = False
 
-while count<10 :
-    command = input('> ')
-    comman = command.lower()
+while command.lower()!='quit' :
+    command = input('> ').lower()
     if command == 'help' :
         print('''
         start --> to start the car 
@@ -20,5 +19,5 @@ while count<10 :
         was_started = False
     elif command == 'stop' and not was_started:
         print('car already stopped!')
-    if command == 'quit' :
-        break
+    else:
+        print("don't understand that !..")
