@@ -3,13 +3,16 @@ try:
         def __init__(self, age):
             self.age=age
 
+
     class Teenage(Person):
         def programmer(self):
              print('junior developer')
              return ''
 
+
     class Older(Person):
          pass
+
 
 
     print('''
@@ -28,7 +31,6 @@ try:
     print(f'the age is: {age} years old')
 
     if name == 'hadi':
-
         print(hadi.programmer())
 
 except KeyError :
